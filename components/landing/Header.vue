@@ -1,5 +1,7 @@
 <template>
-  <header class="w-full px-8 py-4 md:px-10 lg:px-20 md:py-4">
+  <header
+    class="w-full sticky bg-white top-0 z-50 px-8 py-4 md:px-10 lg:px-20 md:py-4"
+  >
     <div class="flex justify-between">
       <!-- Logo -->
       <div class="flex items-center gap-x-12">
@@ -13,10 +15,18 @@
           <h1 class="text-xl font-noto text-primary">retrorevive</h1>
         </div>
         <div class="hidden md:flex items-center gap-x-8 text-sm font-dmsans">
-          <NuxtLink to="#" class="text-slate-500">Home</NuxtLink>
-          <NuxtLink to="#" class="text-slate-500">About</NuxtLink>
-          <NuxtLink to="#" class="text-slate-500">Gallary</NuxtLink>
-          <NuxtLink to="#" class="text-slate-500">Contact</NuxtLink>
+          <NuxtLink to="#home" class="text-slate-500 hover:text-primary"
+            >Home</NuxtLink
+          >
+          <NuxtLink to="#about" class="text-slate-500 hover:text-primary"
+            >About</NuxtLink
+          >
+          <NuxtLink to="#gallary" class="text-slate-500 hover:text-primary"
+            >Gallary</NuxtLink
+          >
+          <NuxtLink to="#contact" class="text-slate-500 hover:text-primary"
+            >Contact</NuxtLink
+          >
         </div>
       </div>
       <div class="flex items-center md:hidden">
@@ -27,7 +37,7 @@
       <div class="hidden md:block">
         <NuxtLink to="#">
           <button
-            class="px-6 py-2 bg-primary font-dmsans text-sm text-white rounded-full sm:ml-6"
+            class="px-6 py-2 bg-primary hover:bg-secondary font-dmsans text-sm text-white rounded-full sm:ml-6"
           >
             Warehouse
           </button>
@@ -46,8 +56,9 @@
       >
         <div class="flex items-center justify-between">
           <NuxtLink
-            to="#"
-            class="block px-2 py-1 text-slate-500 text-sm font-dmsans"
+            to="#home"
+            class="block px-2 py-1 text-slate-500 hover:text-primary text-sm font-dmsans"
+            @click="toggleMenu"
             >Home</NuxtLink
           >
           <Icon
@@ -58,23 +69,27 @@
           />
         </div>
         <NuxtLink
-          to="#"
-          class="block px-2 py-1 text-slate-500 text-sm font-dmsans"
+          to="#about"
+          class="block px-2 py-1 text-slate-500 hover:text-primary text-sm font-dmsans"
+          @click="toggleMenu"
           >About</NuxtLink
         >
         <NuxtLink
-          to="#"
-          class="block px-2 py-1 text-slate-500 text-sm font-dmsans"
+          to="#gallary"
+          class="block px-2 py-1 text-slate-500 hover:text-primary text-sm font-dmsans"
+          @click="toggleMenu"
           >Gallary</NuxtLink
         >
         <NuxtLink
-          to="#"
-          class="block px-2 py-1 text-slate-500 text-sm font-dmsans"
+          to="#contact"
+          class="block px-2 py-1 text-slate-500 hover:text-primary text-sm font-dmsans"
+          @click="toggleMenu"
           >Contact</NuxtLink
         >
         <NuxtLink to="#">
           <button
-            class="px-6 py-2 mt-6 bg-primary text-white rounded-full font-thin"
+            class="px-6 py-2 mt-6 bg-primary hover:bg-secondary font-dmsans text-white rounded-full font-thin"
+            @click="toggleMenu"
           >
             Warehouse
           </button>

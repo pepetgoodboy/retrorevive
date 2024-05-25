@@ -10,6 +10,7 @@ export default <Partial<Config>>{
       },
       colors: {
         primary: "#daae3a",
+        secondary: "#e8be55",
       },
     },
     container: {
