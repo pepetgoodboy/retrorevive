@@ -16,11 +16,13 @@
         blending heritage craftsmanship with contemporary comfort for the modern
         individual.
       </p>
-      <button
-        class="px-8 py-4 lg:px-6 lg:py-2 text-lg lg:text-base bg-primary hover:bg-secondary text-white rounded-full font-medium mt-10"
-      >
-        Go to Warehouse
-      </button>
+      <NuxtLink to="/login">
+        <button
+          class="px-8 py-4 lg:px-6 lg:py-2 text-lg lg:text-base bg-primary hover:bg-secondary text-white rounded-full font-medium mt-10"
+        >
+          Go to Warehouse
+        </button>
+      </NuxtLink>
     </div>
     <div
       class="w-full md:items-center lg:w-[45%] pt-14 lg:pt-0"

@@ -12,14 +12,11 @@ export default <Partial<Config>>{
         primary: "#daae3a",
         secondary: "#e8be55",
       },
+      backgroundImage: {
+        "auth-background": "url('/images/bg-login.png')",
+      },
     },
     container: {
-      // screens: {
-      //   sm: "470px",
-      //   md: "598px",
-      //   lg: "854px",
-      //   xl: "1110px",
-      // },
       center: true,
     },
   },

@@ -35,7 +35,7 @@
         </button>
       </div>
       <div class="hidden md:block">
-        <NuxtLink to="#">
+        <NuxtLink to="/login">
           <button
             class="px-6 py-2 bg-primary hover:bg-secondary font-dmsans text-sm text-white rounded-full sm:ml-6"
           >
@@ -86,7 +86,7 @@
           @click="toggleMenu"
           >Contact</NuxtLink
         >
-        <NuxtLink to="#">
+        <NuxtLink to="/login">
           <button
             class="px-6 py-2 mt-6 bg-primary hover:bg-secondary font-dmsans text-white rounded-full font-thin"
             @click="toggleMenu"
